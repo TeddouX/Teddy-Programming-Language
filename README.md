@@ -19,11 +19,11 @@ Since it's very basic it needs semi_colons at the end of each line
 ## How to use it
 
 For python 3.0+
-```shell
+```bash
   python3 interpreter.py (name of your file).ted
 ```
 For other versions
-```shell
+```bash
   python interpreter.py (name of your file).ted
 ```
 
