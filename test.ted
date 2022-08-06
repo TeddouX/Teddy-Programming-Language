@@ -1,6 +1,8 @@
 :/ Define Variables;
 VAR randomInt = 0;
 VAR randomInt2 = 0;
+VAR userAge = 0;
+VAR userName = "";
 
 :/ Call the random functions;
 CALL random (0, 100) >> randomInt;
@@ -11,3 +13,13 @@ PRINT "Randomly generated number between 0 and 100:";
 PRINT randomInt;
 PRINT "Randomly selected number between 3 and 5";
 PRINT randomInt2;
+
+:/ Get user input;
+INPUT "What is your name? " >> userName;
+INPUT "What is your age? " >> userAge;
+
+:/ Print the users info;
+PRINT "Your name:";
+PRINT userName;
+PRINT "Your age:";
+PRINT userAge;
