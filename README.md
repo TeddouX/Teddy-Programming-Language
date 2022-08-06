@@ -6,8 +6,9 @@
 ## Disclamer
 
 This programming language is very basic and doesn't have the main features of a real programming language. </br>
-Since it's very basic it needs semi_colons at the end of each line
-
+Since it's very basic it needs semi_colons at the end of each line </br>
+It was made with python 3.0. </br>
+Free to use or to upgrade :)
 
 ## Features
 
