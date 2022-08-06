@@ -58,7 +58,7 @@ For other versions
 ```ted
   CALL [function] [args] >> [var_to_write]
 ```
-`function`: The name of the function </br>
+`function`: The name of the function (see at part functions to see them all) </br>
 `args`: The argument of the function </br>
 `var_to_write`: The variable to write (if it has a return)
 
