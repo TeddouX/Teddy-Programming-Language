@@ -1,11 +1,3 @@
-# TODO:
-#   - random [doing]
-#   - if 
-#   - functions
-#   - f strings
-#   - finish comments 
-#   - type conversion in input
-
 import random as rand
 import numpy
 from sys import *
