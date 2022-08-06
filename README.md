@@ -6,6 +6,7 @@
 ## Disclamer
 
 This programming language is very basic and doesn't have the main features of a real programming language
+Since it's very basic it needs semi_colons at the end of each line
 
 
 ## Features
@@ -52,6 +53,11 @@ This programming language is very basic and doesn't have the main features of a 
 `args`: The argument of the function
 `var_to_write`: The variable to write (if it has a return)
 
+### To make a comment
+```ted
+  :/ Your comment here ; <- Mandatory else your code breaks (will remove that later)
+```
+
 ## Functions
 Function Name | Arguments    | Description
 ---           | ---          | ---
@@ -62,3 +68,9 @@ Function Name | Arguments    | Description
 ---           | ---          | ---
 random        | `1`: int     | Picks random number between [1] and [2] 
 ---           | `2`: int     |
+
+## Future Add Ons
+ - That you don't need to put semicolons at the end of each line
+ - "f" strings (will be the same as python)
+ - function declaration (not sure)
+ - if statement (not sure)
