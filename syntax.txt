@@ -1,0 +1,5 @@
+Print something in the console: print string | variable
+
+Declare variable: var {name} = [value]
+
+Take input: input {text} > {optinal: type of value to write} >> [variable to write]

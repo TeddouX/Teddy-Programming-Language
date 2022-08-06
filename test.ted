@@ -1,0 +1,13 @@
+:/ Define Variables;
+VAR randomInt = 0;
+VAR randomInt2 = 0;
+
+:/ Call the random functions;
+CALL random (0, 100) >> randomInt;
+CALL randint (3, 5) >> randomInt2;
+
+:/ Print the results;
+PRINT "Randomly generated number between 0 and 100:";
+PRINT randomInt;
+PRINT "Randomly selected number between 3 and 5";
+PRINT randomInt2;
