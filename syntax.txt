@@ -1,5 +1,7 @@
-Print something in the console: print string | variable
+Print something in the console: PRINT value | variable
 
-Declare variable: var {name} = [value]
+Call a function: Call function_name (args) >> (if it has a return) the variable it should write to
 
-Take input: input {text} > {optinal: type of value to write} >> [variable to write]
+Get user input from console: INPUT text >> the variable it should write to
+
+Declare variable: VAR variable_name = value
