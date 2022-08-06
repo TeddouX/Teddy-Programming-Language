@@ -5,7 +5,7 @@
 
 ## Disclamer
 
-This programming language is very basic and doesn't have the main features of a real programming language
+This programming language is very basic and doesn't have the main features of a real programming language. </br>
 Since it's very basic it needs semi_colons at the end of each line
 
 
