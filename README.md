@@ -42,7 +42,7 @@ For other versions
 ```ted
   INPUT [txt] >> [var_to_write]
 ```
-`txt`: The text that will appear in the console
+`txt`: The text that will appear in the console </br>
 `var_to_write`: The variable that will be written by the users input
 
 ### To declare a variable
@@ -50,7 +50,7 @@ For other versions
 ```ted
   VAR [name] = [value]
 ```
-`name`: The name of the variable
+`name`: The name of the variable </br>
 `value`: The value of the variable
 
 ### To call a function
@@ -58,8 +58,8 @@ For other versions
 ```ted
   CALL [function] [args] >> [var_to_write]
 ```
-`function`: The name of the function
-`args`: The argument of the function
+`function`: The name of the function </br>
+`args`: The argument of the function </br>
 `var_to_write`: The variable to write (if it has a return)
 
 ### To make a comment
