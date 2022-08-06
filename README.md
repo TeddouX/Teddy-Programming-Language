@@ -16,7 +16,16 @@ Since it's very basic it needs semi_colons at the end of each line
 - Input
 - Call functions (only 2)
 
+## How to use it
 
+For python 3.0+
+```shell
+  python3 interpreter.py (name of your file).ted
+```
+For other versions
+```shell
+  python interpreter.py (name of your file).ted
+```
 
 ## Basic syntax
 
@@ -69,7 +78,7 @@ Function Name | Arguments    | Description
 random        | `1`: int     | Picks random number between [1] and [2] 
 ---           | `2`: int     |
 
-## Future Add Ons
+## Future add ons
  - That you don't need to put semicolons at the end of each line
  - "f" strings (will be the same as python)
  - function declaration (not sure)
