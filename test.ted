@@ -23,3 +23,7 @@ PRINT "Your name:";
 PRINT userName;
 PRINT "Your age:";
 PRINT userAge;
+
+:/ Print the description of the functions;
+DESC random;
+DESC randint;
