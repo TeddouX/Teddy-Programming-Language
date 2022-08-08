@@ -1,8 +1,13 @@
+# TODO:
+#   - if 
+#   - base_functions
+#   - f strings
+#   - finish comments 
+
 import random as rand
 import numpy
 from sys import *
 import re
-from unittest import TextTestResult
 
 variables = {}
 
@@ -10,7 +15,9 @@ keywords = [
     "PRINT",
     "VAR",
     "INPUT",
-    "CALL"
+    "CALL",
+    "DESC",
+    "DEF"
 ]
 
 NONE = "none"
@@ -19,7 +26,7 @@ STR = "str"
 BOOL = "bool"
 ANY = "any"
 
-functions = {
+base_functions = {
     "random": {
         "args": [INT, INT],
         "return": INT,
@@ -115,16 +122,16 @@ class Interpreter:
                     # print(variables)
             if self._keyword(x, ":/"):
                 pass # do nothing
-            if self._keyword(x, "CALL"):
+            if self._keyword(x, keywords[keywords.index("CALL")]):
                 func = x.replace("CALL", '').strip()
                 func_name = func[0:func.index("(")].strip()
 
-                if not func_name in functions:
+                if not func_name in base_functions:
                     raise NameError("The called function doesn't exist")
 
-                func_args_type = functions[func_name]['args']  
-                func_return_type = functions[func_name]['return']       
-                func_description = functions[func_name]['description']
+                func_args_type = base_functions[func_name]['args']  
+                func_return_type = base_functions[func_name]['return']       
+                func_description = base_functions[func_name]['description']
 
                 try:
                     in_symbol_pos = func.index(">>")
@@ -163,6 +170,18 @@ class Interpreter:
                     func_return = rand.choice([int(user_func_args[0]), int(user_func_args[1])])
 
                 variables[var_to_write]['value'] = func_return
+            if self._keyword(x, keywords[keywords.index("DESC")]):
+                desc = x.replace("DESC", '')
+                func_name = desc.strip()
+                try:
+                    func_desc = base_functions[func_name]['description']
+                    func_args = base_functions[func_name]['args']
+                    print(f"{func_name}: Arguments: {func_args}, Description: {func_desc}")
+                except KeyError:
+                    print("The function that you are trying to describe doesn't exist in the base program")
+            if self._keyword(x, keywords[keywords.index("DEF")]):
+                func = x.replace("DEF", '')
+                
                                    
 
     def _keyword(self, x, key: str) -> bool:
