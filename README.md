@@ -68,6 +68,12 @@ For other versions
   :/ Your comment here ; <- Mandatory else your code breaks (will remove that later)
 ```
 
+### Ta get the description of a function
+```ted
+  DESC [function]
+```
+`function`: The function that you want to describe
+
 ## Functions
 Function Name | Arguments    | Description
 ---           | ---          | ---
